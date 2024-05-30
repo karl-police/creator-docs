@@ -3,7 +3,8 @@ type: class
 category: Plugins
 memory_category: Instances
 summary: ''
-description: ''
+description: |
+  The Method `Class.Plugin:CreateQWidgetPluginGui()` returns a QWidgetPluginGui.
 code_samples:
 inherits:
   - PluginGui
