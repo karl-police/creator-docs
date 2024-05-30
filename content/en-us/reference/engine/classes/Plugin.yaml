@@ -720,6 +720,35 @@ methods:
     deprecation_message: ''
     security: PluginSecurity
     thread_safety: Unsafe
+  - name: Plugin:CreateQWidgetPluginGui
+    summary: |
+      Creates a `Class.QWidgetPluginGui` given a
+      `Datatype.DockWidgetPluginGuiInfo`.
+    description: |
+      **CreateQWidgetPluginGui** creates a new `Class.QWidgetPluginGui`
+      from the given options. Similar to `Class.Plugin:CreateDockWidgetPluginGui()``.
+    code_samples:
+    parameters:
+      - name: pluginGuiId
+        type: string
+        default:
+        summary: |
+          A unique and consistent identifier used to storing the widget's dock
+          state and other internal details.
+      - name: pluginGuiOptions
+        type: Dictionary
+        default:
+        summary: |
+          Describes the Instance to create (initial state,
+          size, etc).
+    returns:
+      - type: QWidgetPluginGui
+        summary: ''
+    tags:
+      - Yields
+    deprecation_message: ''
+    security: RobloxScriptSecurity
+    thread_safety: Unsafe
   - name: Plugin:ImportFbxAnimation
     summary: |
       Prompts the user to open a .fbx animation file that can be loaded onto the
